@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Update stron">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppCongig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppCongig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/coin-slider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/coin-slider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cufon-yanone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/cufon-yanone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cufon-yui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/cufon-yui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.4.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.4.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scriptCal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scriptCal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,11 +169,30 @@
       <option name="presentableId" value="Default" />
       <updated>1692446462324</updated>
       <workItem from="1692446463878" duration="1000" />
-      <workItem from="1693597276458" duration="1445000" />
+      <workItem from="1693597276458" duration="2259000" />
     </task>
+    <task id="LOCAL-00001" summary="Update stron">
+      <created>1693598914284</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693598914284</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update stron">
+      <created>1693599124556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693599124556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update stron" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update stron" />
   </component>
 </project>
