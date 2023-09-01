@@ -10,10 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Update stron">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1692446462324</updated>
       <workItem from="1692446463878" duration="1000" />
-      <workItem from="1693597276458" duration="3810000" />
+      <workItem from="1693597276458" duration="9816000" />
     </task>
     <task id="LOCAL-00001" summary="Update stron">
       <created>1693598914284</created>
@@ -199,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693599752885</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update stron">
+      <created>1693601281900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693601281900</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
