@@ -1,14 +1,15 @@
-package entity;
+package app.entity;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 @Getter
 @Setter
+@Entity
+@Table(name = "user")
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

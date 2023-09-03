@@ -29,12 +29,12 @@
 </div>
 <div class="menu_nav">
   <ul>
-    <li class="active"><a href="index.jsp"><span>Home Page</span></a></li>
-    <li><a href="calendar.jsp"><span>Calendar</span></a></li>
-    <li><a href="register.jsp"><span>Register</span></a></li>
-    <li><a href="login.jsp"><span>Log in</span></a></li>
-    <li><a href="about.jsp"><span>About Us</span></a></li>
-    <li><a href="contact.jsp"><span>Contact Us</span></a></li>
+    <li class="active"><a href="/"><span>Home Page</span></a></li>
+    <li><a href="/calendar"><span>Calendar</span></a></li>
+    <li><a href="/register"><span>Register</span></a></li>
+    <li><a href="/login"><span>Log in</span></a></li>
+    <li><a href="/about"><span>About Us</span></a></li>
+    <li><a href="/contact"><span>Contact Us</span></a></li>
   </ul>
 </div>
 

@@ -13,7 +13,8 @@
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
-     </properties>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -25,11 +26,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
-      </plugin>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>2.7.5</version>
       </plugin>
     </plugins>
     <finalName>Hibernate1</finalName>
@@ -120,14 +116,6 @@
       <artifactId>junit-platform-commons</artifactId>
       <version>1.7.0</version>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.security.oauth.boot</groupId>
-      <artifactId>spring-security-oauth2-autoconfigure</artifactId>
-      <version>2.0.6.RELEASE</version>
-    </dependency>
-
-
 
   </dependencies>
-
 </project>
