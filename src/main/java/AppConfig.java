@@ -22,6 +22,7 @@ import java.util.Locale;
 @ComponentScan(basePackages = "app")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "app.repository")
+@EnableWebSecurity
 public class AppConfig extends WebMvcConfigurerAdapter {
 
 
@@ -59,5 +60,6 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public Validator validator(){
         return new LocalValidatorFactoryBean();
     }
+
 
 }

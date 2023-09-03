@@ -9,41 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Update stron">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/LoginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Connecting back-end + front-end">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/validator/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.proporties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppCongig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/EquipmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TrainingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/EquipmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/EquipmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProfileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ProfileDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/TrainingsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Equipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Trainings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/calendar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calendar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -93,28 +71,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6cada732fce21e79a3f596d35dbc4930&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3678161",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "6cada732fce21e79a3f596d35dbc4930",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app.entity" />
@@ -126,8 +105,6 @@
   <component name="RunManager">
     <configuration name="Tomcat 9.0.74" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.74" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="Hibernate1:war exploded">
           <settings>
@@ -227,7 +204,7 @@
       <workItem from="1693597276458" duration="9816000" />
       <workItem from="1693721403900" duration="1786000" />
       <workItem from="1693740838405" duration="9098000" />
-      <workItem from="1693751226317" duration="4630000" />
+      <workItem from="1693751226317" duration="11620000" />
     </task>
     <task id="LOCAL-00001" summary="Update stron">
       <created>1693598914284</created>
@@ -257,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693601281900</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Connecting back-end + front-end">
+      <created>1693756086890</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693756086890</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +249,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update stron" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update stron" />
+    <MESSAGE value="Connecting back-end + front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connecting back-end + front-end" />
   </component>
 </project>
