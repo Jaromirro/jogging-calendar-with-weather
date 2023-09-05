@@ -3,12 +3,12 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <title>Jogging calendar</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href='<c:url value="css/style.css"/>' rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
     <script type="text/javascript" src="js/cufon-yui.js"></script>
     <script type="text/javascript" src="js/cufon-yanone.js"></script>
@@ -34,9 +34,9 @@
         <div class="mainbar">
             <form:form method="POST" modelAttribute="userForm" class="form-signin">
                 <h2 class="form-signin-heading">Create your account</h2>
-                        <form:input type="text" path="username" class="form-control" placeholder="Username"
+                        <form:input type="text" path="name" class="form-control" placeholder="Username"
                                     autofocus="true"></form:input>
-                        <form:errors path="username"></form:errors>
+                        <form:errors path="name"></form:errors>
                     </div>
                     <div class="form-group ${status.error ? 'has-error' : ''}">
                         <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>

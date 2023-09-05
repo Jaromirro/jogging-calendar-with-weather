@@ -6,7 +6,7 @@
 <head>
     <title>Jogging calendar</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href='<c:url value="css/style.css"/>' rel="stylesheet" type="text/css">
+    <link href=css/style.css rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
     <script type="text/javascript" src="js/cufon-yui.js"></script>
     <script type="text/javascript" src="js/cufon-yanone.js"></script>

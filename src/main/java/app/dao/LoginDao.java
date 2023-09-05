@@ -1,5 +1,5 @@
 package app.dao;
 public interface LoginDao
 {
-        public boolean checkLogin(String userName, String userPassword);
+        public boolean checkLogin(String user, String Password);
     }

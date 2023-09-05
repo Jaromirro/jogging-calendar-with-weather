@@ -15,11 +15,11 @@ import javax.validation.Valid;
 @Controller
 public class UserController {
 
-    @Autowired
-    private UserService userService;
-
-    @Autowired
-    private UserValidator userValidator;
+////    @Autowired
+////    private UserService userService;
+//
+//    @Autowired
+//    private UserValidator userValidator;
 
     private UserDao userDao;
 
@@ -35,14 +35,14 @@ public class UserController {
     @PostMapping("/register")
     @ResponseBody
     public String getAdd(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
-        userValidator.validate(userForm, bindingResult);
+//        userValidator.validate(userForm, bindingResult);
+//
+//        if (bindingResult.hasErrors()) {
+//            return "register";
+//        }
 
-        if (bindingResult.hasErrors()) {
-            return "register";
-        }
-
-        userService.save(userForm);
-
+//        userService.save(userForm);
+//
         return "redirect:/welcome";
     }
 
