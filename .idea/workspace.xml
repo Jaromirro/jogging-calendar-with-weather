@@ -9,21 +9,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Connecting back-end + front-end">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/coin-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styleCal.css" afterDir="false" />
+    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="working security">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/TrainingsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/headerReg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/nonex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/LoginDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/validator/UserValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/coin-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/coin-slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styleCal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/styleCal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/validation.proporties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/calen.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/calendar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calendar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/coin-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styleCal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/_overlay-event.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/_overlay-event.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/_overlay-title-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/_overlay-title-bar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/_split-container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/_split-container.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/_styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/_styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-contract-left-right.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-contract-left-right.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-down-full-line.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-down-full-line.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-down-full.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-down-full.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-expand-left-right.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-expand-left-right.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-left-full.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-left-full.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-right-full.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-right-full.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_arrow-up-full.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_arrow-up-full.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_close.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_close.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_eye.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_eye.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_forward.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_forward.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_hamburger-side.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_hamburger-side.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_minus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_minus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_octagon-hollow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_octagon-hollow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_pin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_pin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_plus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_plus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_refresh.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_refresh.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_rewind.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_rewind.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/buttons/_square-hollow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/buttons/_square-hollow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_arrow-down-full-line-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_arrow-down-full-line-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_arrow-expand-left-right-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_arrow-expand-left-right-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_arrow-top-right-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_arrow-top-right-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_circle-hollow-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_circle-hollow-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_circle-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_circle-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_close-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_close-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_equals-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_equals-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_hamburger-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_hamburger-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_hamburger-side-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_hamburger-side-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_minus-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_minus-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_octagon-hollow-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_octagon-hollow-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_pipe-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_pipe-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_plus-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_plus-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/menus/_rhombus-hollow-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/menus/_rhombus-hollow-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/small/_arrow-down-full-medium.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/small/_arrow-down-full-medium.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/small/_arrow-up-full-medium.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/small/_arrow-up-full-medium.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/small/_refresh-medium.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/small/_refresh-medium.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foundation/small/_refresh-small.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foundation/small/_refresh-small.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gal1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/gal1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gal2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/gal2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gal3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/gal3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gal4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/gal4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gal5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/gal5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/gal6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/gal6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/header_bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/header_bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/img2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/li.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/li.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/main_bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/main_bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/menu_split.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/menu_split.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/overlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/overlay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/search.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/search.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/search_bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/search_bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slide_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/slide_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/spacer.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/spacer.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/submit.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/submit.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/ta-mark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/ta-mark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/userpic.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/userpic.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/coin-slider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/coin-slider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cufon-yanone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/cufon-yanone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cufon-yui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/cufon-yui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.4.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-1.4.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scriptCal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/scriptCal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +138,7 @@
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -73,36 +176,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Programowanie/jogging-calendar-with-weather/src/main/resources/static&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3678161&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6cada732fce21e79a3f596d35dbc4930&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Programowanie/jogging-calendar-with-weather/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3678161",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "6cada732fce21e79a3f596d35dbc4930",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\java" />
+      <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\java\app" />
+      <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\resources\static\" />
       <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\webapp\resources" />
+      <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -305,7 +415,10 @@
       <workItem from="1693751226317" duration="11620000" />
       <workItem from="1693831526812" duration="1138000" />
       <workItem from="1693846355133" duration="13468000" />
-      <workItem from="1693924377172" duration="1127000" />
+      <workItem from="1693924377172" duration="13236000" />
+      <workItem from="1693938458387" duration="3778000" />
+      <workItem from="1693942248476" duration="1985000" />
+      <workItem from="1694008429348" duration="8035000" />
     </task>
     <task id="LOCAL-00001" summary="Update stron">
       <created>1693598914284</created>
@@ -342,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693756086890</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working security">
+      <created>1693925525216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693925525216</updated>
+    </task>
+    <task id="LOCAL-00007" summary="working security">
+      <created>1693925571630</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693925571630</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +478,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update stron" />
     <MESSAGE value="Connecting back-end + front-end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connecting back-end + front-end" />
+    <MESSAGE value="working security" />
+    <option name="LAST_COMMIT_MESSAGE" value="working security" />
   </component>
 </project>

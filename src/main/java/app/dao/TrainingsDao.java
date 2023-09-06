@@ -1,2 +1,6 @@
-package app.dao;public class TrainingsDao {
+package app.dao;
+
+public class TrainingsDao {
+
+
 }

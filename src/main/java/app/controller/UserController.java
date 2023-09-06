@@ -1,30 +1,35 @@
 package app.controller;
 
 import app.dao.UserDao;
+import app.dto.LoginDto;
 import app.entity.User;
+import app.repository.UserRepository;
 import app.service.UserService;
-import app.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpCookie;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class UserController {
 
-////    @Autowired
-////    private UserService userService;
-//
-//    @Autowired
-//    private UserValidator userValidator;
+    @Autowired
+    private UserService userService;
+
 
     private UserDao userDao;
+    private final UserRepository userRepository;
 
-    public UserController(UserDao bookDao) {
-        this.userDao = bookDao;
+    public UserController(UserDao userDao,
+                          UserRepository userRepository) {
+        this.userDao = userDao;
+        this.userRepository = userRepository;
     }
     @GetMapping("/register")
     public String formAdd(Model model) {
@@ -35,15 +40,9 @@ public class UserController {
     @PostMapping("/register")
     @ResponseBody
     public String getAdd(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
-//        userValidator.validate(userForm, bindingResult);
-//
-//        if (bindingResult.hasErrors()) {
-//            return "register";
-//        }
+        userService.save(userForm);
 
-//        userService.save(userForm);
-//
-        return "redirect:/welcome";
+        return "sign";
     }
 
     @GetMapping("/login")
@@ -56,11 +55,25 @@ public class UserController {
 
         return "login";
     }
+    @PostMapping("/login")
+    public String login(HttpServletResponse response, LoginDto loginDto) {
+        User user = userService.findByName(loginDto.getName());
+        if (user == null) {
+            return "error";
+        }
+        if (!user.getPasswordConfirm().equals(loginDto.getPassword())) {
+            return "error";
+        }
+        response.addCookie(new Cookie("user", loginDto.getName()));
+
+        return "/welcome";
+    }
 
     @GetMapping({ "/welcome"})
     public String welcome(Model model) {
         return "welcome";
     }
+
 
 
 }

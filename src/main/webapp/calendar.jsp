@@ -2,23 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Jogging calendar</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href='<c:url value="css/style.css"/>' rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
-    <script type="text/javascript" src="js/cufon-yui.js"></script>
-    <script type="text/javascript" src="js/cufon-yanone.js"></script>
-    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/coin-slider.min.js"></script>
-    <link rel="stylesheet" href="css/styleCal.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-
-</head>
 <body>
-
-
 <div class="main">
     <jsp:include page="header.jsp"/>
     <div class="content">
@@ -63,7 +47,7 @@
                     <button class="btnClose">Close</button>
                 </div>
 
-                <script src="js/scriptCal.js"></script>
+                <script src="resources/js/scriptCal.js"></script>
                 </div>
                 <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
             </div>

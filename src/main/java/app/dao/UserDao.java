@@ -1,9 +1,12 @@
 package app.dao;
+import app.dto.LoginDto;
 import app.entity.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -28,4 +31,5 @@ public class UserDao {
     public void delete(User user) {
         entityManager.remove(entityManager.contains(user) ? user : entityManager.merge(user));
     }
+
 }
