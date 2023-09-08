@@ -20,8 +20,8 @@ public class TrainingsDao {
         entityManager.persist(training);
     }
 
-    public Equipment findById(Integer id) {
-        return entityManager.find(Equipment.class, id);
+    public Trainings findById(Integer id) {
+        return entityManager.find(Trainings.class, id);
     }
 
     public void update(Trainings training) {

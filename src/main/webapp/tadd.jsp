@@ -35,7 +35,13 @@
                             <label for="seconds">Sekundy: <form:input path="seconds" type="number"/>
                                 <form:errors path="seconds" cssClass="error"/>
                 </label><br><br>
-
+                    <label for="equipment">Sprzet:
+                        <form:select items="${equipment}"
+                                     path="equipment"
+                                     itemLabel="name"
+                                     itemValue="id"/>
+                        <form:errors path="equipment" cssClass="error"/>
+                    </label><br>
 
                     <input type="submit">
                 </form:form>

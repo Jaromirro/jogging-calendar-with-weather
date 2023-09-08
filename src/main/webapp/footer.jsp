@@ -1,25 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="resources/css/coin-slider.css" />
-    <script type="text/javascript" src="resources/js/cufon-yui.js"></script>
-    <script type="text/javascript" src="resources/js/cufon-yanone.js"></script>
-    <script type="text/javascript" src="resources/js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="resources/js/script.js"></script>
-    <script type="text/javascript" src="resources/js/coin-slider.min.js"></script>
-    <link rel="stylesheet" href="resources/css/styleCal.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-</head>
 <body>
 <div class="fbg">
     <div class="fbg_resize">
         <div class="col c1">
             <h2><span>Image</span> Gallery</h2>
-            <a href="#"><img src="resources/images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+            <a href="#"><img src="../resources/images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../resources/images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../resources/images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../resources/images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../resources/images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../resources/images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
         <div class="col c2">
             <h2><span>Services</span> Overview</h2>
             <p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>

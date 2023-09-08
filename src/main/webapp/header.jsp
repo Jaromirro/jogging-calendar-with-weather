@@ -35,7 +35,6 @@
     <li><a href="/register"><span>Register</span></a></li>
     <li><a href="/login"><span>Log in</span></a></li>
     <li><a href="/about.jsp"><span>About Us</span></a></li>
-    <li><a href="/contact.jsp"><span>Contact Us</span></a></li>
   </ul>
 </div>
 

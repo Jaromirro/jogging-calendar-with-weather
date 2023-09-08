@@ -9,40 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Registration+login+css+cookie">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/ProfileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/eadd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/elist.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lost.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pedit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tadd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tremove.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tupdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Equipment and training lists + adding">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/eupdate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/EquipmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/EquipmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/EquipmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ProfileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ProfileDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Equipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Profile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/eadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/eadd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/headerReg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/headerReg.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nonex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/eremove.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pedit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sign.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sign.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tadd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/training.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/training.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tremove.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tremove.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tupdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tupdate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +328,7 @@
       <workItem from="1693942248476" duration="1985000" />
       <workItem from="1694008429348" duration="24412000" />
       <workItem from="1694069483763" duration="37916000" />
-      <workItem from="1694150123899" duration="3080000" />
+      <workItem from="1694150123899" duration="30466000" />
     </task>
     <task id="LOCAL-00001" summary="Update stron">
       <created>1693598914284</created>
@@ -398,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694018696057</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Equipment and training lists + adding">
+      <created>1694169292307</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694169292307</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,17 +404,7 @@
     <MESSAGE value="Connecting back-end + front-end" />
     <MESSAGE value="working security" />
     <MESSAGE value="Registration+login+css+cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Registration+login+css+cookie" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/pedit.jsp</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Equipment and training lists + adding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Equipment and training lists + adding" />
   </component>
 </project>

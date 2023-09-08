@@ -11,7 +11,7 @@
       <div class="clr"></div>
       <div class="slider"><br><br><br><br><br>
           <h2 class="form-signin-heading">Edit Your profile</h2><br>
-        <form:form method="POST" modelAttribute="pForm" class="form-signin">
+          <form:form method="POST" modelAttribute="pForm" class="form-signin">
           <div class="form-group ${status.error ? 'has-error' : ''}">
         <br>
         <form:input type="text" path="firstName" class="form-control" placeholder="firstName"

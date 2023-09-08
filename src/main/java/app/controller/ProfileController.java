@@ -7,6 +7,7 @@ import app.dao.UserDao;
 import app.dto.LoginDto;
 import app.entity.Equipment;
 import app.entity.Profile;
+import app.entity.Trainings;
 import app.entity.User;
 import app.repository.UserRepository;
 import app.service.UserService;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -51,9 +53,9 @@ public class ProfileController {
     }
 
     @GetMapping("/profile")
-    public String read(ProfileDao pDao){
-
+    public String read(Model model){
         Profile profile = pDao.findById(1);
+        model.addAttribute("profile", profile);
 
 
 
@@ -63,16 +65,15 @@ public class ProfileController {
 
 
     @GetMapping("/pedit")
-    public String formAdd(Model model, LoginDto loginDto) {
-        Profile profile = new Profile();
+    public String formAdd(Model model) {
+        Profile profile = pDao.findById(1);
         model.addAttribute("pForm", profile);
         return "pedit";
     }
     @PostMapping("/pedit")
-    @ResponseBody
-    public String getAdd(@ModelAttribute("pForm") Profile pForm, BindingResult bindingResult) {
+    public String getAdd(@Valid Profile pForm, BindingResult result) {
 
-        pDao.saveProfile(pForm);
+        pDao.update(pForm);
         return "profile";
     }
     @ModelAttribute("profile")
@@ -80,4 +81,12 @@ public class ProfileController {
         return String.valueOf(pDao.findById(1));
     }
 
+    @ModelAttribute("trainings")
+    public List<Trainings> listTraining(){
+        return tDao.findAll();
+    }
+    @ModelAttribute("equpiment")
+    public List<Equipment> listEquipment(){
+        return equipmentDao.findAll();
+    }
 }

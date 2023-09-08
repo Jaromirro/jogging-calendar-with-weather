@@ -10,18 +10,27 @@
             <jsp:include page="headerReg.jsp"/>
             <div class="clr"></div>
             <div class="slider"><br><br><br><br><br>
-                Witaj!
-
+                <h1>Witaj! ${profile.firstName}</h1><br><h3>${profile.firstName} ${profile.lastName}</h3><div></div><br>
+                <div class="menu_nav">
                 <ul>
-                    <li class="active"><a href="/"><span>Home Page</span></a></li>
                     <li><a href="/pedit"><span>Edytuj profil</span></a></li>
                     <li><a href="/training"><span>Training</span></a></li>
                     <li><a href="/elist"><span>Equipment</span></a></li>
                     <li><a href="/profile"><span>Profile</span></a></li>
-                    <li><a href="/logout"><span>Log out</span></a></li>
-                    <li><a href="/about"><span>About Us</span></a></li>
-                    <li><a href="/contact"><span>Contact Us</span></a></li>
                 </ul>
+                </div><br><br><br><br>
+                <div><div><h2>Treningi</h2></div><c:forEach items="${trainings}" var="trainings">
+                    <li>
+                            ${trainings.title} (${trainings.distance})
+                    </li>
+                </c:forEach>
+                    </p><div><h2>Sprzet</h2></div><br><div></div><div>
+                        <p><c:forEach items="${equpiment}" var="equipment">
+                        <li>
+                            ${equipment.name} (${equipment.type})
+                        </li>
+                        </c:forEach>
+                        </p></div></div>
 
                 <div class="clr"></div>
             </div>

@@ -15,16 +15,16 @@
                     <h1>Lista Treningow</h1>
                     <c:forEach items="${trainings}" var="trainings">
                         <p>${trainings.id}.  ${trainings.title}  (${trainings.distance}km)  ${trainings.hour}h   ${trainings.minutes}min   ${trainings.seconds}s
-                            <a href="tupdate/${trainings.id}">Edytuj</a>
-                            <a href="tremove/${trainings.id}">Usuń</a>
+                            <a href="/tupdate/${trainings.id}">Edytuj</a>
+                            <a href="/tremove/${trainings.id}">Usuń</a>
                         </p>
-                        <%--          <ul>--%>
-                        <%--            <c:forEach items="${book.authors}" var="author">--%>
-                        <%--              <li>--%>
-                        <%--                  ${author.firstName} ${author.lastName}--%>
-                        <%--              </li>--%>
-                        <%--            </c:forEach>--%>
-                        <%--          </ul>--%>
+                                  <ul>
+                                    <c:forEach items="${trainings.equipment}" var="equipment">
+                                      <li>
+                                          ${equpimnet.type} ${equpimnet.name}
+                                      </li>
+                                    </c:forEach>
+                                  </ul>
                     </c:forEach>
                 <br>
                 <a href="tadd">Dodaj trening</a>

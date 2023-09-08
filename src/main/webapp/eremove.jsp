@@ -13,8 +13,8 @@
 
 
                 <h1>Potwierdz usunięcie treningu</h1>
-                <a href="/tremove/${trainingId}/confirmed">potwierdzam</a>
-                <a href="/training">anuluj</a>
+                <a href="/eremove/${equipmentId}/confirmed">potwierdzam</a>
+                <a href="/elist">anuluj</a>
                 <br>
                 <div class="clr"></div>
             </div>

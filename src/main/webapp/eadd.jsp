@@ -13,7 +13,7 @@
                 <h2 class="form-signin-heading">DODAJ SPRZET</h2><br>
 <br><h3>Rodzaj sprzetu</h3><br>
                 <form:form modelAttribute="equipment" method="post">
-                    <form:radiobuttons items="${EquipTyp}" path="type" multiple="true"/></label><br>
+                    <form:radiobuttons items="${EquipTyp}" path="type" /></label><br>
                     <label for="name">Nazwa: <form:input path="name"/>
                         <form:errors path="name" cssClass="error"/>
                     </label><br><br><br>

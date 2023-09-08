@@ -11,10 +11,7 @@ import app.service.TrainingsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -57,17 +54,39 @@ public class TrainingsController {
         }
         training.setUser(userDao.findById(1));
         tDao.saveTraining(training);
-        return "redirect:/elist";
+        return "redirect:/training";
     }
-    @ModelAttribute("equpimnet")
-    public List<Equipment> getEqupment() {
+
+    @GetMapping("/tupdate/{id}")
+    public String updateForm(@PathVariable Integer id, Model model){
+        Trainings training = tDao.findById(id);
+        model.addAttribute("training", training);
+        return "/tupdate";
+    }
+
+    @PostMapping("/tupdate/{id}")
+    public String updateForm(@Valid Trainings training, BindingResult result){
+        if (result.hasErrors()){
+            return "/tupdate";
+        }
+        tDao.update(training);
+        return "redirect:/training";
+    }
+
+    @GetMapping("/tremove/{id}/confirmed")
+    public String remove(@PathVariable Integer id){
+        tDao.delete(tDao.findById(id));
+        return "redirect:/training";
+    }
+
+    @GetMapping("/tremove/{id}")
+    public String removeNotConfirmed(@PathVariable Integer id, Model model){
+        model.addAttribute("trainingId", id);
+        return "/tremove";
+    }
+    @ModelAttribute("equipment")
+    public List<Equipment> getEquipment() {
         return equipmentDao.findAll();
     }
-
-
-
-
-
-
 
 }

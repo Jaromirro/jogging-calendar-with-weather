@@ -5,9 +5,13 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDateTime;
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -22,9 +26,9 @@ public class Trainings {
 
     private Integer distance;
 
-    private java.sql.Date date;
+    private Date date;
 
-    private java.sql.Time time;
+    private Time time;
 
     private Integer hour;
 
@@ -34,5 +38,16 @@ public class Trainings {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    public List<Equipment> equipments;
+
+    public List<Equipment> getEquipment() {
+        return equipments;
+    }
+
+    public void setEquipment(List<Equipment> equipments) {
+        this.equipments = equipments;
+    }
 
 }

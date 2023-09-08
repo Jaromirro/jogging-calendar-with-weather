@@ -51,7 +51,6 @@ public class UserController {
         return "register";
     }
     @PostMapping("/register")
-    @ResponseBody
     public String getAdd(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
 
         userService.save(userForm);
@@ -60,7 +59,7 @@ public class UserController {
         profile.setFirstName(null);
         pDao.saveProfile(profile);
 
-        return "sign.jsp";
+        return "redirect:/sign.jsp";
     }
 
     @GetMapping("/login")

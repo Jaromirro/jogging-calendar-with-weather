@@ -5,19 +5,19 @@
 <head>
     <title>Jogging calendar</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="resources/css/coin-slider.css" />
-    <script type="text/javascript" src="resources/js/cufon-yui.js"></script>
-    <script type="text/javascript" src="resources/js/cufon-yanone.js"></script>
-    <script type="text/javascript" src="resources/js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="resources/js/script.js"></script>
-    <script type="text/javascript" src="resources/js/coin-slider.min.js"></script>
-    <link rel="stylesheet" href="resources/css/styleCal.css" />
+    <link href="../resources/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/coin-slider.css" />
+    <script type="text/javascript" src="../resources/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="../resources/js/cufon-yanone.js"></script>
+    <script type="text/javascript" src="../resources/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../resources/js/script.js"></script>
+    <script type="text/javascript" src="../resources/js/coin-slider.min.js"></script>
+    <link rel="stylesheet" href="../resources/css/styleCal.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 <body>
 <div class="logo">
-    <h1><a href="index.html"><small>Run with passion</small> <span>Jogging Calendar</span></a></h1>
+    <h1><a href=""><small>Run with passion</small> <span>Jogging Calendar</span></a></h1>
 </div>
 <div class="clr"></div>
 <div class="searchform">
@@ -33,11 +33,10 @@
         <li class="active"><a href="/"><span>Home Page</span></a></li>
         <li><a href="/calendar"><span>Calendar</span></a></li>
         <li><a href="/training"><span>Training</span></a></li>
-        <li><a href="/equipment"><span>Equipment</span></a></li>
+        <li><a href="/elist"><span>Equipment</span></a></li>
         <li><a href="/profile"><span>Profile</span></a></li>
         <li><a href="/logout"><span>Log out</span></a></li>
-        <li><a href="/about"><span>About Us</span></a></li>
-        <li><a href="/contact"><span>Contact Us</span></a></li>
+        <li><a href="/about,jsp"><span>About Us</span></a></li>
     </ul>
 </div>
 

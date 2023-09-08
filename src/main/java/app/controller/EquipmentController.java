@@ -1,6 +1,7 @@
 package app.controller;
 
 import app.dao.EquipmentDao;
+import app.dao.UserDao;
 import app.entity.Equipment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,8 +20,12 @@ public class EquipmentController {
 
     private EquipmentDao equipmentDao;
 
-    public EquipmentController(EquipmentDao equipmentDao) {
+    private UserDao userDao;
+
+    public EquipmentController(EquipmentDao equipmentDao, UserDao userDao) {
+
         this.equipmentDao = equipmentDao;
+        this.userDao = userDao;
     }
 
     @GetMapping("/eadd")
@@ -34,6 +39,7 @@ public class EquipmentController {
         if (bledy.hasErrors()){
             return "/eadd";
         }
+        equipment.setUser(userDao.findById(1));
         equipmentDao.saveEqu(equipment);
         return "redirect:/elist";
     }
@@ -49,17 +55,29 @@ public class EquipmentController {
     @GetMapping("/eupdate/{id}")
     public String updateForm(@PathVariable Integer id, Model model){
         Equipment equipment = equipmentDao.findById(id);
-        model.addAttribute("equpiments", equipment);
-        return "book/update-book-form";
+        model.addAttribute("equipments", equipment);
+        return "/eupdate";
     }
 
     @PostMapping("/eupdate/{id}")
     public String updateForm(@Valid Equipment equipment, BindingResult result){
         if (result.hasErrors()){
-            return "book/update-book-form";
+            return "/eupdate";
         }
         equipmentDao.update(equipment);
         return "redirect:/elist";
+    }
+
+    @GetMapping("/eremove/{id}/confirmed")
+    public String remove(@PathVariable Integer id){
+        equipmentDao.delete(equipmentDao.findById(id));
+        return "redirect:/elist";
+    }
+
+    @GetMapping("/eremove/{id}")
+    public String removeNotConfirmed(@PathVariable Integer id, Model model){
+        model.addAttribute("equipmentId", id);
+        return "/eremove";
     }
 
     @ModelAttribute("EquipTyp")
