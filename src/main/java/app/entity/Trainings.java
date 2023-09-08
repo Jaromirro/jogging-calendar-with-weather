@@ -2,27 +2,37 @@ package app.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.sql.Time;
 import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
 @Table(name = "training")
+@ToString
 public class Trainings {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String title;
 
-    private Double distance;
+    private Integer distance;
 
-    private Date date;
+    private java.sql.Date date;
 
-    private LocalDateTime timeStart;
+    private java.sql.Time time;
 
-    private String timeEnd;
+    private Integer hour;
+
+    private Integer minutes;
+
+    private Integer seconds;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
 }

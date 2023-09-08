@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="logo">
-  <h1><a href="index.html"><small>Run with passion</small> <span>Jogging Calendar</span></a></h1>
+  <h1><a href=""><small>Run with passion</small> <span>Jogging Calendar</span></a></h1>
 </div>
 <div class="clr"></div>
 <div class="searchform">
@@ -34,8 +34,8 @@
     <li><a href="/calendar"><span>Calendar</span></a></li>
     <li><a href="/register"><span>Register</span></a></li>
     <li><a href="/login"><span>Log in</span></a></li>
-    <li><a href="/about"><span>About Us</span></a></li>
-    <li><a href="/contact"><span>Contact Us</span></a></li>
+    <li><a href="/about.jsp"><span>About Us</span></a></li>
+    <li><a href="/contact.jsp"><span>Contact Us</span></a></li>
   </ul>
 </div>
 

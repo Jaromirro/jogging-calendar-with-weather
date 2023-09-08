@@ -36,12 +36,12 @@
                 <div class="form-group ${error != null ? 'has-error' : ''}">
                     <span>${message}</span>
                     <input name="name" type="text" class="form-control" placeholder="Username"
-                           autofocus="true"/>
+                           autofocus="true"/><br><br>
                     <input name="password" type="password" class="form-control" placeholder="Password"/>
                     <span>${error}</span>
                     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+<br>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button><br>
                     <h4 class="text-center"><a href="${contextPath}/register">Create an account</a></h4>
                 </div>
             </form>

@@ -32,7 +32,8 @@
     <ul>
         <li class="active"><a href="/"><span>Home Page</span></a></li>
         <li><a href="/calendar"><span>Calendar</span></a></li>
-        <li><a href="/equipment"><span>Register</span></a></li>
+        <li><a href="/training"><span>Training</span></a></li>
+        <li><a href="/equipment"><span>Equipment</span></a></li>
         <li><a href="/profile"><span>Profile</span></a></li>
         <li><a href="/logout"><span>Log out</span></a></li>
         <li><a href="/about"><span>About Us</span></a></li>

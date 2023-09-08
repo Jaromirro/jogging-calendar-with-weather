@@ -5,19 +5,6 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Jogging calendar</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
-    <script type="text/javascript" src="js/cufon-yui.js"></script>
-    <script type="text/javascript" src="js/cufon-yanone.js"></script>
-    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/coin-slider.min.js"></script>
-    <link rel="stylesheet" href="dist/calendar.js.css" />
-    <script src="dist/calendar.js"></script>
-</head>
 <body>
 <div class="main">
     <div class="header">
@@ -37,16 +24,10 @@
                         <form:input type="text" path="name" class="form-control" placeholder="Username"
                                     autofocus="true"></form:input>
                         <form:errors path="name"></form:errors>
-                    </div>
+                    </div><br><br><br><br><br><br>
                     <div class="form-group ${status.error ? 'has-error' : ''}">
                         <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
                         <form:errors path="password"></form:errors>
-                    </div>
-
-                    <div class="form-group ${status.error ? 'has-error' : ''}">
-                        <form:input type="password" path="passwordConfirm" class="form-control"
-                                    placeholder="Confirm your password"></form:input>
-                        <form:errors path="passwordConfirm"></form:errors>
                     </div>
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>

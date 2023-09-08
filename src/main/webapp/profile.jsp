@@ -11,6 +11,18 @@
             <div class="clr"></div>
             <div class="slider"><br><br><br><br><br>
                 Witaj!
+
+                <ul>
+                    <li class="active"><a href="/"><span>Home Page</span></a></li>
+                    <li><a href="/pedit"><span>Edytuj profil</span></a></li>
+                    <li><a href="/training"><span>Training</span></a></li>
+                    <li><a href="/elist"><span>Equipment</span></a></li>
+                    <li><a href="/profile"><span>Profile</span></a></li>
+                    <li><a href="/logout"><span>Log out</span></a></li>
+                    <li><a href="/about"><span>About Us</span></a></li>
+                    <li><a href="/contact"><span>Contact Us</span></a></li>
+                </ul>
+
                 <div class="clr"></div>
             </div>
             <div class="clr"></div>

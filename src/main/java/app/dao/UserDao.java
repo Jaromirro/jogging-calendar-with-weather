@@ -24,6 +24,11 @@ public class UserDao {
         return user;
     }
 
+    public User findByName(String name) {
+        User user = entityManager.find(User.class, name);
+        return user;
+    }
+
     public void update(User user) {
         entityManager.merge(user);
     }

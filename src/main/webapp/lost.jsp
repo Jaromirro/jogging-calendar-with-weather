@@ -5,17 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <body>
 <div class="main">
-  <div class="header">
-    <div class="header_resize">
-      <jsp:include page="header.jsp"/>
-      <div class="clr"></div>
-      <div class="slider"><br><br><br><br><br>
-        GRATULACJE! ZAREJESTROWAŁEŚ SIĘ!
-        <div class="clr"></div>
-      </div>
-      <div class="clr"></div>
+    <div class="header">
+        <div class="header_resize">
+            <jsp:include page="header.jsp"/>
+            <div class="clr"></div>
+            <div class="slider"><br><br><br><br><br>
+                NIE JESTEŚ ZALOGOWANY!
+                <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+        </div>
     </div>
-  </div>
 
 </div>
 <jsp:include page="footer.jsp"/>
