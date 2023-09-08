@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.Arrays;
 import java.util.List;
@@ -21,6 +23,8 @@ public class EquipmentController {
     private EquipmentDao equipmentDao;
 
     private UserDao userDao;
+
+    public int cook;
 
     public EquipmentController(EquipmentDao equipmentDao, UserDao userDao) {
 
@@ -39,14 +43,22 @@ public class EquipmentController {
         if (bledy.hasErrors()){
             return "/eadd";
         }
-        equipment.setUser(userDao.findById(1));
+        equipment.setUser(userDao.findById(cook));
         equipmentDao.saveEqu(equipment);
         return "redirect:/elist";
     }
 
     @GetMapping("/elist")
-    public String list(Model model){
-        List<Equipment> equipments = equipmentDao.findAll();
+    public String list(Model model, HttpServletRequest request){
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("user")) {
+                    cook= Integer.parseInt(cookie.getValue());
+                }
+            }
+        }
+        List<Equipment> equipments = equipmentDao.findAllUser(userDao.findById(cook));
         model.addAttribute("equipments", equipments);
         return "/elist";
     }
@@ -54,6 +66,7 @@ public class EquipmentController {
 
     @GetMapping("/eupdate/{id}")
     public String updateForm(@PathVariable Integer id, Model model){
+
         Equipment equipment = equipmentDao.findById(id);
         model.addAttribute("equipments", equipment);
         return "/eupdate";

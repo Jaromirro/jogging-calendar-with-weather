@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 @Controller
 public class UserController {
@@ -51,13 +52,16 @@ public class UserController {
         return "register";
     }
     @PostMapping("/register")
-    public String getAdd(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
-
+    public String getAdd(@Valid @ModelAttribute("userForm") User userForm, BindingResult result) {
+        if (result.hasErrors()){
+            return "/register";
+        }
         userService.save(userForm);
         Profile profile = new Profile();
         profile.setUser(userForm);
-        profile.setFirstName(null);
+        profile.setFirstName(userForm.getName());
         pDao.saveProfile(profile);
+
 
         return "redirect:/sign.jsp";
     }
@@ -79,8 +83,9 @@ public class UserController {
         {
             return "error";
         }
+            String cook = String.valueOf(user.getId());
 
-        response.addCookie(new Cookie("user", loginDto.getName()));
+        response.addCookie(new Cookie("user", cook));
 
         return "/welcome";
     }

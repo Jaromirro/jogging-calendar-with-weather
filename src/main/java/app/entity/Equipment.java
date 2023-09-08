@@ -31,5 +31,16 @@ public class Equipment {
     @OneToOne
     private User user;
 
+    @ManyToMany
+    public List<Trainings> trainings;
+
+    public List<Trainings> getTraining() {
+        return trainings;
+    }
+
+    public void setTraining(List<Trainings> trainings) {
+        this.trainings = trainings;
+    }
+
 
 }

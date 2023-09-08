@@ -9,28 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Equipment and training lists + adding">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/eupdate.jsp" afterDir="false" />
+    <list default="true" id="541f009d-76b4-4de5-8d8d-31b060244d39" name="Changes" comment="Editing before validation">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ValidationMessages_pl.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/EquipmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/TrainingsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/EquipmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/EquipmentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/TrainingsDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Equipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/Trainings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/eadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/eadd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/headerReg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/headerReg.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nonex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/eremove.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pedit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/elist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/elist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tadd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/training.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/training.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tremove.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tremove.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tupdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tupdate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,35 +79,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Programowanie/jogging-calendar-with-weather/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3678161&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6cada732fce21e79a3f596d35dbc4930&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Programowanie/jogging-calendar-with-weather/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3678161",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "6cada732fce21e79a3f596d35dbc4930",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\resources" />
       <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\java" />
       <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\java\app" />
       <recent name="E:\Programowanie\jogging-calendar-with-weather\src\main\resources\static\" />
@@ -328,7 +324,7 @@
       <workItem from="1693942248476" duration="1985000" />
       <workItem from="1694008429348" duration="24412000" />
       <workItem from="1694069483763" duration="37916000" />
-      <workItem from="1694150123899" duration="30466000" />
+      <workItem from="1694150123899" duration="39576000" />
     </task>
     <task id="LOCAL-00001" summary="Update stron">
       <created>1693598914284</created>
@@ -393,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694169292307</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Editing before validation">
+      <created>1694202521573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694202521573</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +408,7 @@
     <MESSAGE value="working security" />
     <MESSAGE value="Registration+login+css+cookie" />
     <MESSAGE value="Equipment and training lists + adding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Equipment and training lists + adding" />
+    <MESSAGE value="Editing before validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editing before validation" />
   </component>
 </project>

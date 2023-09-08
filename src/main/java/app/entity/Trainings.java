@@ -39,15 +39,15 @@ public class Trainings {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    public List<Equipment> equipments;
+    @ManyToMany
+    public List<Equipment> tequipments;
 
     public List<Equipment> getEquipment() {
-        return equipments;
+        return tequipments;
     }
 
-    public void setEquipment(List<Equipment> equipments) {
-        this.equipments = equipments;
+    public void setEquipment(List<Equipment> tequipments) {
+        this.tequipments = tequipments;
     }
 
 }

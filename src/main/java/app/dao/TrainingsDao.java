@@ -2,6 +2,7 @@ package app.dao;
 
 import app.entity.Equipment;
 import app.entity.Trainings;
+import app.entity.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -35,6 +36,12 @@ public class TrainingsDao {
 
     public List<Trainings> findAll() {
         return entityManager.createQuery("SELECT a FROM Trainings a")
+                .getResultList();
+    }
+
+    public List<Trainings> findAllUser(User user) {
+        return entityManager.createQuery("SELECT a FROM Trainings a WHERE  a.user = :user")
+                .setParameter("user", user)
                 .getResultList();
     }
 

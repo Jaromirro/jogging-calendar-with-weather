@@ -26,6 +26,8 @@ public class TrainingsController {
     private TrainingsDao tDao;
     private EquipmentDao equipmentDao;
 
+    public int cook;
+
     public TrainingsController(TrainingsDao trainingsDao,
                                EquipmentDao equipmentDao,
                                UserDao userDao) {
@@ -34,8 +36,16 @@ public class TrainingsController {
         this.userDao = userDao;
     }
     @GetMapping("/training")
-    public String list(Model model){
-        List<Trainings> trainings = tDao.findAll();
+    public String list(Model model, HttpServletRequest request){
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("user")) {
+                    cook= Integer.parseInt(cookie.getValue());
+                }
+            }
+        }
+        List<Trainings> trainings = tDao.findAllUser(userDao.findById(cook));
         model.addAttribute("trainings", trainings);
         return "/training";
     }
@@ -44,15 +54,16 @@ public class TrainingsController {
     @GetMapping("/tadd")
     public String showForm(Model model) {
         model.addAttribute("training", new Trainings());
+        model.addAttribute("equipment", equipmentDao.findAll());
         return "/tadd";
     }
 
     @PostMapping("/tadd")
-    public String processForm(@Valid Trainings training, BindingResult bledy){
-        if (bledy.hasErrors()){
+    public String processForm(@Valid @ModelAttribute Trainings training, BindingResult result){
+        if (result.hasErrors()){
             return "/tadd";
         }
-        training.setUser(userDao.findById(1));
+        training.setUser(userDao.findById(cook));
         tDao.saveTraining(training);
         return "redirect:/training";
     }
@@ -84,9 +95,9 @@ public class TrainingsController {
         model.addAttribute("trainingId", id);
         return "/tremove";
     }
-    @ModelAttribute("equipment")
+    @ModelAttribute("tequipments")
     public List<Equipment> getEquipment() {
-        return equipmentDao.findAll();
+        return equipmentDao.findAllUser(userDao.findById(cook));
     }
 
 }

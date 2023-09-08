@@ -18,13 +18,13 @@
                             <a href="/tupdate/${trainings.id}">Edytuj</a>
                             <a href="/tremove/${trainings.id}">Usuń</a>
                         </p>
-                                  <ul>
-                                    <c:forEach items="${trainings.equipment}" var="equipment">
-                                      <li>
-                                          ${equpimnet.type} ${equpimnet.name}
-                                      </li>
-                                    </c:forEach>
-                                  </ul>
+<%--                                  <ul>--%>
+<%--                                    <c:forEach items="${trainings.equipment}" var="equipment">--%>
+<%--                                      <li>--%>
+<%--                                          ${equpimnet.type} ${equpimnet.name}--%>
+<%--                                      </li>--%>
+<%--                                    </c:forEach>--%>
+<%--                                  </ul>--%>
                     </c:forEach>
                 <br>
                 <a href="tadd">Dodaj trening</a>

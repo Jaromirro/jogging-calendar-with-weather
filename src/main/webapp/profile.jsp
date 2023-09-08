@@ -25,9 +25,9 @@
                     </li>
                 </c:forEach>
                     </p><div><h2>Sprzet</h2></div><br><div></div><div>
-                        <p><c:forEach items="${equpiment}" var="equipment">
+                        <p><c:forEach items="${equipments}" var="equipments">
                         <li>
-                            ${equipment.name} (${equipment.type})
+                            ${equipments.name} (${equipments.type})
                         </li>
                         </c:forEach>
                         </p></div></div>

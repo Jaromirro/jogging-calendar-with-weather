@@ -35,7 +35,8 @@ public class ProfileController {
     private TrainingsDao tDao;
     private EquipmentDao equipmentDao;
 
-    private static String cook = "Weronika";
+    public int cook;
+
     @Autowired
     private UserRepository userRepository;
 
@@ -47,18 +48,26 @@ public class ProfileController {
         this.userService = userService;
         this.userDao = userDao;
         this.pDao = pDao;
-        this.profile = profile;
         this.equipmentDao = equipmentDao;
         this.tDao = trainingsDao;
     }
 
     @GetMapping("/profile")
-    public String read(Model model){
-        Profile profile = pDao.findById(1);
+    public String read(Model model, HttpServletRequest request){
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("user")) {
+                    cook= Integer.parseInt(cookie.getValue());
+                }
+            }
+        }
+        Profile profile = pDao.findById(cook);
         model.addAttribute("profile", profile);
-
-
-
+        List<Trainings> trainings = tDao.findAllUser(userDao.findById(cook));
+        model.addAttribute("trainings", trainings);
+        List<Equipment> equipments = equipmentDao.findAllUser(userDao.findById(cook));
+        model.addAttribute("equipments", equipments);
 
         return "profile";
     }
@@ -66,27 +75,27 @@ public class ProfileController {
 
     @GetMapping("/pedit")
     public String formAdd(Model model) {
-        Profile profile = pDao.findById(1);
+        Profile profile = pDao.findById(cook);
         model.addAttribute("pForm", profile);
         return "pedit";
     }
     @PostMapping("/pedit")
-    public String getAdd(@Valid Profile pForm, BindingResult result) {
+    public String getAdd(Profile pForm) {
 
         pDao.update(pForm);
         return "profile";
     }
     @ModelAttribute("profile")
     public String getProfil() {
-        return String.valueOf(pDao.findById(1));
+        return String.valueOf(pDao.findById(cook));
     }
 
     @ModelAttribute("trainings")
     public List<Trainings> listTraining(){
-        return tDao.findAll();
+        return tDao.findAllUser(userDao.findById(cook));
     }
     @ModelAttribute("equpiment")
     public List<Equipment> listEquipment(){
-        return equipmentDao.findAll();
+        return equipmentDao.findAllUser(userDao.findById(cook));
     }
 }

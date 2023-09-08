@@ -13,18 +13,11 @@
 
         <a href="eadd">Dodaj Sprzęt</a>
         <h1>Lista Sprzętów</h1>
-        <c:forEach items="${equipments}" var="equipment">
-          <p>${equipment.name} (${equipment.type})
-            <a href="eupdate/${equipment.id}">Edytuj</a>
-            <a href="eremove/${equipment.id}">Usuń</a>
+        <c:forEach items="${equipments}" var="equipments">
+          <p>${equipments.name} (${equipments.type})
+            <a href="eupdate/${equipments.id}">Edytuj</a>
+            <a href="eremove/${equipments.id}">Usuń</a>
           </p>
-<%--          <ul>--%>
-<%--            <c:forEach items="${book.authors}" var="author">--%>
-<%--              <li>--%>
-<%--                  ${author.firstName} ${author.lastName}--%>
-<%--              </li>--%>
-<%--            </c:forEach>--%>
-<%--          </ul>--%>
         </c:forEach>
 
         <div class="clr"></div>
