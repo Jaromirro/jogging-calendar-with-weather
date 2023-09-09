@@ -68,7 +68,7 @@ public class EquipmentController {
     public String updateForm(@PathVariable Integer id, Model model){
 
         Equipment equipment = equipmentDao.findById(id);
-        model.addAttribute("equipments", equipment);
+        model.addAttribute("equipment", equipment);
         return "/eupdate";
     }
 
@@ -77,6 +77,7 @@ public class EquipmentController {
         if (result.hasErrors()){
             return "/eupdate";
         }
+        equipment.setUser(userDao.findById(cook));
         equipmentDao.update(equipment);
         return "redirect:/elist";
     }
@@ -98,5 +99,6 @@ public class EquipmentController {
         String[] EquipTyp = new String[]{"buty", "kurtka", "koszulka", "spodenki", "spodnie","zegarek"};
         return Arrays.asList(EquipTyp);
     }
+
 
 }

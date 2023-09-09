@@ -9,6 +9,7 @@ import app.entity.Equipment;
 import app.entity.Profile;
 import app.entity.Trainings;
 import app.entity.User;
+import app.repository.TrainingsRepository;
 import app.repository.UserRepository;
 import app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ import java.util.List;
 public class ProfileController {
     @Autowired
     private UserService userService;
-    private Profile profile;
+    private TrainingsRepository trainingsRepository;
     private ProfileDao pDao;
     private UserDao userDao;
     private TrainingsDao tDao;
@@ -44,12 +45,14 @@ public class ProfileController {
                              ProfileDao pDao,
                              UserService userService,
                              TrainingsDao trainingsDao,
-                             EquipmentDao equipmentDao) {
+                             EquipmentDao equipmentDao,
+                             TrainingsRepository trainingsRepository) {
         this.userService = userService;
         this.userDao = userDao;
         this.pDao = pDao;
         this.equipmentDao = equipmentDao;
         this.tDao = trainingsDao;
+        this.trainingsRepository = trainingsRepository;
     }
 
     @GetMapping("/profile")
@@ -68,8 +71,17 @@ public class ProfileController {
         model.addAttribute("trainings", trainings);
         List<Equipment> equipments = equipmentDao.findAllUser(userDao.findById(cook));
         model.addAttribute("equipments", equipments);
+        int lol2 = cook;
+        model.addAttribute("sum", sum());
+        System.out.println(sum());
+
 
         return "profile";
+    }
+
+    @GetMapping("/calednar")
+    public String calendar(Model model){
+        return "redirect:/calendar";
     }
 
 
@@ -97,5 +109,9 @@ public class ProfileController {
     @ModelAttribute("equpiment")
     public List<Equipment> listEquipment(){
         return equipmentDao.findAllUser(userDao.findById(cook));
+    }
+    @ModelAttribute("sum")
+    public int sum(){
+        return trainingsRepository.sumDistance(userDao.findById(1));
     }
 }

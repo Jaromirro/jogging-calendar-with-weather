@@ -31,7 +31,7 @@
 <div class="menu_nav">
     <ul>
         <li class="active"><a href="/"><span>Home Page</span></a></li>
-        <li><a href="/calendar"><span>Calendar</span></a></li>
+        <li><a href="/calendar.jsp"><span>Calendar</span></a></li>
         <li><a href="/training"><span>Training</span></a></li>
         <li><a href="/elist"><span>Equipment</span></a></li>
         <li><a href="/profile"><span>Profile</span></a></li>

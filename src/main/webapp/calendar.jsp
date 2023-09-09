@@ -49,7 +49,6 @@
 
                 <script src="resources/js/scriptCal.js"></script>
                 </div>
-                <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
             </div>
             <div class="clr"></div>
         </div>

@@ -7,6 +7,7 @@ import lombok.ToString;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Getter
@@ -19,28 +20,18 @@ public class Equipment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+@NotNull
     private String type;
-
+@NotNull
+@Size(min = 5, max = 20)
     private String name;
-
+@NotNull
     private Long km;
-
+@NotNull
     private Integer weather;
 
     @OneToOne
     private User user;
-
-    @ManyToMany
-    public List<Trainings> trainings;
-
-    public List<Trainings> getTraining() {
-        return trainings;
-    }
-
-    public void setTraining(List<Trainings> trainings) {
-        this.trainings = trainings;
-    }
 
 
 }

@@ -31,7 +31,7 @@
 <div class="menu_nav">
   <ul>
     <li class="active"><a href="/"><span>Home Page</span></a></li>
-    <li><a href="/calendar"><span>Calendar</span></a></li>
+    <li><a href="/calendar.jsp"><span>Calendar</span></a></li>
     <li><a href="/register"><span>Register</span></a></li>
     <li><a href="/login"><span>Log in</span></a></li>
     <li><a href="/about.jsp"><span>About Us</span></a></li>

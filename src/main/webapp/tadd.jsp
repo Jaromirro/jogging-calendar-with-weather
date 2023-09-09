@@ -12,10 +12,10 @@
             <div class="slider"><br><br><br><br><br>
                 <span>DODAJ TRENING</span>
                 <form:form modelAttribute="training" method="post">
-                    <label for="title">Nazwa: <form:input path="title" type="text"/>
+                    <label for="title">Nazwa: <form:input path="title" type="text" value="Nazwa treningu"/>
                         <form:errors path="title" cssClass="error"/>
                     </label><br>
-                    <label for="distance">Dystans: <form:input path="distance" type="number" />
+                    <label for="distance">Dystans: <form:input path="distance" type="number" value="0"/> km
                         <form:errors path="distance" cssClass="error"/>
                     </label><br>
                     <label for="date">Data i czas rozpoczęcia: <form:input path="date" type="date"/>
@@ -28,11 +28,11 @@
 <%--&lt;%&ndash;                        <form:errors path="timeEnd" cssClass="error"/>&ndash;%&gt;--%>
 <%--&lt;%&ndash;                    </label>&ndash;%&gt;--%>
                     <span>Czas trwania treningu</span><br>
-                    <label for="hour">Godziny: <form:input path="hour" type="number"/>
+                    <label for="hour">Godziny: <form:input path="hour" type="number" value="0"/>
                     <form:errors path="hour" cssClass="error"/></label><br>
-                        <label for="minutes">Minuty: <form:input path="minutes" type="number"/>
+                        <label for="minutes">Minuty: <form:input path="minutes" type="number" value="0"/>
                             <form:errors path="minutes" cssClass="error"/></label><br>
-                            <label for="seconds">Sekundy: <form:input path="seconds" type="number"/>
+                            <label for="seconds">Sekundy: <form:input path="seconds" type="number" value="0"/>
                                 <form:errors path="seconds" cssClass="error"/>
                 </label><br><br>
                     <label for="tequipments">Sprzet:

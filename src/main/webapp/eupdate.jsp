@@ -10,9 +10,9 @@
       <jsp:include page="headerReg.jsp"/>
       <div class="clr"></div>
       <div class="slider"><br><br><br><br><br>
-        <h2 class="form-signin-heading">DODAJ SPRZET</h2><br>
+        <h2 class="form-signin-heading">EDYTUJ SPRZET</h2><br>
         <br><h3>Rodzaj sprzetu</h3><br>
-        <form:form modelAttribute="equipments" method="post">
+        <form:form modelAttribute="equipment" method="post">
           <form:hidden path="id"/>
           <form:radiobuttons items="${EquipTyp}" path="type" /></label><br>
           <label for="name">Nazwa: <form:input path="name"/>

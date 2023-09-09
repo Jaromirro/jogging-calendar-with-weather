@@ -80,6 +80,7 @@ public class TrainingsController {
         if (result.hasErrors()){
             return "/tupdate";
         }
+        training.setUser(userDao.findById(cook));
         tDao.update(training);
         return "redirect:/training";
     }

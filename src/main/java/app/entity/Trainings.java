@@ -21,19 +21,19 @@ public class Trainings {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+@NotNull
     private String title;
-
+@NotNull
     private Integer distance;
-
+@NotNull
     private Date date;
 
     private Time time;
-
+@NotNull
     private Integer hour;
-
+@NotNull
     private Integer minutes;
-
+@NotNull
     private Integer seconds;
     @ManyToOne
     @JoinColumn(name = "user_id")

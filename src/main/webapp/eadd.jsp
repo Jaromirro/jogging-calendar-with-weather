@@ -14,15 +14,15 @@
 <br><h3>Rodzaj sprzetu</h3><br>
                 <form:form modelAttribute="equipment" method="post">
                     <form:radiobuttons items="${EquipTyp}" path="type" /></label><br>
-                    <label for="name">Nazwa: <form:input path="name"/>
+                    <label for="name">Nazwa: <form:input path="name" value="Nazwa"/>
                         <form:errors path="name" cssClass="error"/>
                     </label><br><br><br>
-                    <label for="km">Dystans: <form:input path="km"/>
+                    <label for="km">Dystans: <form:input path="km" value="Dystans"/> km
                         <form:errors path="km" cssClass="error"/><br>
                         Cieple <form:radiobutton path="weather" value="1"/><br>
                         Przejsciowe <form:radiobutton path="weather" value="2"/><br>
                         Lekkie <form:radiobutton path="weather" value="3"/><br>
-                        Nie dotyczy <form:radiobutton path="weather" value="4"/><br>
+                        Nie dotyczy <form:radiobutton path="weather" value="4" checked="checked" /><br>
 
                     </label><br><br>
 

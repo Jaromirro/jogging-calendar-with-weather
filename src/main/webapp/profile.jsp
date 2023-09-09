@@ -10,7 +10,7 @@
             <jsp:include page="headerReg.jsp"/>
             <div class="clr"></div>
             <div class="slider"><br><br><br><br><br>
-                <h1>Witaj! ${profile.firstName}</h1><br><h3>${profile.firstName} ${profile.lastName}</h3><div></div><br>
+                <h1>Witaj! ${profile.firstName}</h1><br><h3>${profile.firstName} ${profile.lastName}</h3><br><br>Przebiegłeś sumarycznie ${sum} km<div></div><br>
                 <div class="menu_nav">
                 <ul>
                     <li><a href="/pedit"><span>Edytuj profil</span></a></li>
@@ -21,13 +21,13 @@
                 </div><br><br><br><br>
                 <div><div><h2>Treningi</h2></div><c:forEach items="${trainings}" var="trainings">
                     <li>
-                            ${trainings.title} (${trainings.distance})
+                            Nazwa: ${trainings.title} (Dystans: ${trainings.distance} KM)
                     </li>
                 </c:forEach>
                     </p><div><h2>Sprzet</h2></div><br><div></div><div>
                         <p><c:forEach items="${equipments}" var="equipments">
                         <li>
-                            ${equipments.name} (${equipments.type})
+                            Nazwa: ${equipments.name} (Rodzaj sprzetu: ${equipments.type})
                         </li>
                         </c:forEach>
                         </p></div></div>
